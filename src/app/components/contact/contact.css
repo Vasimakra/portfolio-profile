@@ -1,0 +1,82 @@
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border: 0.2rem solid var(--bg-color);
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+  outline: none;
+  border: 0.2rem solid var(--main-color);
+}
+
+.contact form .input-box input::placeholder,
+.contact form textarea::placeholder {
+  color: var(--text-color);
+}
+
+.contact .toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem 1.2rem;
+  background: rgba(46, 125, 50, 0.95);
+  color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.16);
+  font-size: 1.4rem;
+  z-index: 999;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.contact .toast.error {
+  background: rgba(211, 47, 47, 0.95);
+}
+
+.contact .toast.success {
+  background: rgba(46, 125, 50, 0.95);
+}
+
+.contact form input.invalid,
+.contact form textarea.invalid {
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.18);
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}

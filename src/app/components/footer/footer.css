@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  transition: all 0.5s ease;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second-bg-color);
+}
+
+.footer-iconTop a:hover {
+  background: transparent;
+  color: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a:hover i {
+  color: var(--main-color);
+}
