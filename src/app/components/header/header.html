@@ -1,0 +1,15 @@
+<header class="header">
+  <a href="#" class="logo">Portfolio</a>
+  <i class="bx bx-menu" id="menu-icon" (click)="toggleMenu()" [class.bx-x]="isMenuOpen"></i>
+
+  <nav class="navbar" [class.active]="isMenuOpen">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#portfolio">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
