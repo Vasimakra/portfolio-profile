@@ -19,12 +19,32 @@
   --text-color: #fff;
   --main-color: #0ef;
 }
-
 html {
   font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -34,6 +54,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 section {
